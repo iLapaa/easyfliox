@@ -1,18 +1,17 @@
 {
-  branches: [
-    { name: "main" },
-    { name: "dev", channel: "dev", prerelease: true },
-  ];
-  tagFormat: "${version}",
-
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-            "changelogFile": "CHANGELOG.md"
-        }
-      ],
+  "branches": [
+    { "name": "main" },
+    { "name": "dev", "channel": "dev", "prerelease": true }
+  ],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
     ]
+  ]
 }
